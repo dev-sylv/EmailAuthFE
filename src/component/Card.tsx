@@ -4,12 +4,27 @@ import { iCard } from "../types/interfaces/Interfaces";
 import InputData from "./Input";
 import Button from "./Button";
 
-const Card: React.FC<iCard> = ({ tittle, Buttontittle, onClick }) => {
+const Card: React.FC<iCard> = ({
+  tittle,
+  Buttontittle,
+  onClick,
+  InputTittle,
+  InputTittle1,
+  InputTittle2,
+  sign,
+  request,
+}) => {
   return (
     <div>
       <Main>
         <Text>{tittle}</Text>
-        <InputData tittle="Name" sign={true} request={false} />
+        <InputData
+          InputTittle={InputTittle}
+          InputTittle1={InputTittle1}
+          InputTittle2={InputTittle2}
+          sign={sign}
+          request={request}
+        />
 
         <Button
           Buttontittle={Buttontittle}
