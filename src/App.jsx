@@ -1,8 +1,15 @@
 import React from 'react'
+import Button from './component/Button'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+    <Button
+    tittle= "Sylvia"
+    bg = "darkorange"
+    cc="white"
+    />
+    </div>
   )
 }
 
