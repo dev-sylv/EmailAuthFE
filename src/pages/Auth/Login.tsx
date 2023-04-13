@@ -9,6 +9,10 @@ const Login = () => {
         <Card
           tittle="SIGN IN"
           Buttontittle="Login"
+          InputTittle="Email"
+          InputTittle1="Password"
+          sign={true}
+          request={false}
           onClick={() => {
             console.log("I am working");
           }}

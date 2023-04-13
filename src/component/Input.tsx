@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { iInput } from "../types/interfaces/Interfaces";
 
 const InputData: React.FC<iInput> = ({
-  tittle,
-  tittle1,
-  tittle2,
+  InputTittle,
+  InputTittle1,
+  InputTittle2,
   sign,
   request,
 }) => {
@@ -13,9 +13,9 @@ const InputData: React.FC<iInput> = ({
     <div>
       <Field>
         <Form>
-          <Input placeholder={tittle} />
-          {sign ? <Input placeholder={tittle1} /> : null}
-          {request ? <Input placeholder={tittle2} /> : null}
+          <Input placeholder={InputTittle} />
+          {sign ? <Input placeholder={InputTittle1} /> : null}
+          {request ? <Input placeholder={InputTittle2} /> : null}
         </Form>
       </Field>
     </div>

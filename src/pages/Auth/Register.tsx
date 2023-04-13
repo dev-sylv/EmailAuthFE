@@ -9,6 +9,11 @@ const Register = () => {
         <Card
           tittle="SIGN UP"
           Buttontittle="Register"
+          InputTittle="Email"
+          InputTittle1="Password"
+          InputTittle2="Confirm Password"
+          sign={true}
+          request={true}
           onClick={() => {
             console.log("I am working");
           }}
