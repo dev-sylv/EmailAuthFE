@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Card from "../../component/Card";
+import Card from "../../components/Card";
 
 const Register = () => {
   return (

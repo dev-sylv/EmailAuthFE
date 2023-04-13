@@ -8,7 +8,7 @@ const ResetPassword = () => {
       <Main>
         <Card
           tittle="Reset Password"
-          Buttontittle="Register"
+          Buttontittle="Reset"
           InputTittle="Enter Old password"
           InputTittle1="Enter New password"
           InputTittle2="Confirm New Password"
