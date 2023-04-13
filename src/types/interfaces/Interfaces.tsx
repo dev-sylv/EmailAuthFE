@@ -13,4 +13,6 @@ export interface iCard {
 
 export interface iInput {
   tittle: string;
+  request: boolean;
+  sign: boolean;
 }

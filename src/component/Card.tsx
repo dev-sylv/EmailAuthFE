@@ -9,9 +9,7 @@ const Card: React.FC<iCard> = ({ tittle, Buttontittle, onClick }) => {
     <div>
       <Main>
         <Text>{tittle}</Text>
-        <InputData tittle="Name" />
-        <InputData tittle="Email" />
-        <InputData tittle="Password" />
+        <InputData tittle="Name" sign={true} request={false} />
 
         <Button
           Buttontittle={Buttontittle}

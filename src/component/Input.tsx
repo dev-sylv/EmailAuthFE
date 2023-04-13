@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { iInput } from "../types/interfaces/Interfaces";
 
-const InputData: React.FC<iInput> = ({ tittle }) => {
+const InputData: React.FC<iInput> = ({ tittle, sign, request }) => {
   return (
     <div>
       <Field>
         <Form>
           <Input placeholder={tittle} />
+          {sign ? <Input placeholder={tittle} /> : null}
+          {request ? <Input placeholder={tittle} /> : null}
         </Form>
       </Field>
     </div>
@@ -18,6 +20,8 @@ export default InputData;
 
 const Field = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 `;
 const Form = styled.form`
