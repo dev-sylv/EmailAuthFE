@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import { iCard } from "../types/interfaces/Interfaces";
+import InputData from "./Input";
 
-const Card = () => {
+const Card: React.FC<iCard> = ({ tittle }) => {
   return (
     <div>
       <Main>
-        <Text>Text</Text>
-        <Field>
-          <Form>
-            <Input placeholder="Name" />
-          </Form>
-        </Field>
+        <Text>{tittle}</Text>
+        <InputData tittle="Name" />
+        <InputData tittle="Email" />
+        <InputData tittle="Password" />
       </Main>
     </div>
   );
@@ -33,18 +33,4 @@ const Text = styled.div`
   font-weight: 500px;
   text-transform: uppercase;
   font-size: 40px;
-`;
-const Field = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-const Form = styled.form`
-  width: 100%;
-`;
-const Input = styled.input`
-  border-radius: 4px;
-  border: 1px solid grey;
-  height: 50px;
-  width: 300px;
-  padding-left: 10px;
 `;

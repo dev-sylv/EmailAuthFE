@@ -4,7 +4,9 @@ import Card from './component/Card'
 const App = () => {
   return (
     <div>
-   <Card />
+   <Card 
+   tittle='SIGN UP'
+   />
     </div>
   )
 }
