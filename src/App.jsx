@@ -1,14 +1,10 @@
 import React from 'react'
-import Button from './component/Button'
+import Card from './component/Card'
 
 const App = () => {
   return (
     <div>
-    <Button
-    tittle= "Sylvia"
-    bg = "darkorange"
-    cc="white"
-    />
+   <Card />
     </div>
   )
 }
