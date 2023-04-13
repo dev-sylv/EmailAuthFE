@@ -24,6 +24,7 @@ const Main = styled.div<{ bg: string; cc: string }>`
   justify-content: center;
   align-items: center;
   transition: all 360ms;
+  margin-top: 20px;
 
   :hover {
     cursor: pointer;

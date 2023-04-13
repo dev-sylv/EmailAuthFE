@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { iCard } from "../types/interfaces/Interfaces";
 import InputData from "./Input";
+import Button from "./Button";
 
 const Card: React.FC<iCard> = ({ tittle }) => {
   return (
@@ -11,6 +12,8 @@ const Card: React.FC<iCard> = ({ tittle }) => {
         <InputData tittle="Name" />
         <InputData tittle="Email" />
         <InputData tittle="Password" />
+
+        <Button tittle="Proceed" bg="purple" cc="white" />
       </Main>
     </div>
   );
@@ -20,13 +23,17 @@ export default Card;
 
 const Main = styled.div`
   width: 400px;
-  min-height: 600px;
+  min-height: 400px;
   border-radius: 10px;
   border-color: silver;
-  background-color: purple;
+  background-color: transparent;
+  border: 2px solid purple;
   display: flex;
   flex-direction: column;
   align-items: center;
+  :hover {
+    border: 1px solid white;
+  }
 `;
 const Text = styled.div`
   margin-top: 40px;
