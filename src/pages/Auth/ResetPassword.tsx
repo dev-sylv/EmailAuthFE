@@ -9,11 +9,9 @@ const ResetPassword = () => {
         <Card
           tittle="Reset Password"
           Buttontittle="Reset"
-          InputTittle="Enter Old password"
-          InputTittle1="Enter New password"
-          InputTittle2="Confirm New Password"
-          sign={true}
-          request={true}
+          InputTittle="Email"
+          sign={false}
+          request={false}
           onClick={() => {
             console.log("I am working");
           }}

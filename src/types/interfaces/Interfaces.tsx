@@ -17,6 +17,10 @@ export interface iCard {
   route: string;
   text: string;
   path: string;
+  route1?: string;
+  text1?: string;
+  path1?: string;
+  call?: boolean;
 }
 
 export interface iInput {

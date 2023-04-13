@@ -17,6 +17,10 @@ const Card: React.FC<iCard> = ({
   route,
   path,
   text,
+  call,
+  route1,
+  path1,
+  text1,
 }) => {
   return (
     <div>
@@ -39,6 +43,11 @@ const Card: React.FC<iCard> = ({
         <Para>
           {text}, <Routing to={`${path}`}>{route}</Routing>
         </Para>
+        {call ? (
+          <Para>
+            {text1}, <Routing to={`${path1}`}>{route1}</Routing>
+          </Para>
+        ) : null}
       </Main>
     </div>
   );

@@ -19,6 +19,10 @@ const Login = () => {
           text="Don't have an account"
           route="Create One Now"
           path="/"
+          call={true}
+          text1="Forget your password?"
+          route1="Request for a reset here"
+          path1="/reset-password"
         />
       </Main>
     </div>
