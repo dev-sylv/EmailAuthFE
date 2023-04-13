@@ -4,7 +4,7 @@ import { iCard } from "../types/interfaces/Interfaces";
 import InputData from "./Input";
 import Button from "./Button";
 
-const Card: React.FC<iCard> = ({ tittle }) => {
+const Card: React.FC<iCard> = ({ tittle, Buttontittle, onClick }) => {
   return (
     <div>
       <Main>
@@ -13,7 +13,12 @@ const Card: React.FC<iCard> = ({ tittle }) => {
         <InputData tittle="Email" />
         <InputData tittle="Password" />
 
-        <Button tittle="Proceed" bg="purple" cc="white" />
+        <Button
+          Buttontittle={Buttontittle}
+          bg="purple"
+          cc="white"
+          onClick={onClick}
+        />
       </Main>
     </div>
   );

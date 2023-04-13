@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { iButton } from "../types/interfaces/Interfaces";
 
-const Button: React.FC<iButton> = ({ tittle, cc, bg }) => {
+const Button: React.FC<iButton> = ({ Buttontittle, cc, bg, onClick }) => {
   return (
     <div>
-      <Main bg={bg} cc={cc}>
-        <Text>{tittle}</Text>
+      <Main bg={bg} cc={cc} onClick={onClick}>
+        <Text>{Buttontittle}</Text>
       </Main>
     </div>
   );

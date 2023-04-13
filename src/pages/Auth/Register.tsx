@@ -1,8 +1,21 @@
 import React from "react";
 import styled from "styled-components";
+import Card from "../../component/Card";
 
 const Register = () => {
-  return <div>Register</div>;
+  return (
+    <div>
+      <Main>
+        <Card
+          tittle="SIGN UP"
+          Buttontittle="Register"
+          onClick={() => {
+            console.log("I am working");
+          }}
+        />
+      </Main>
+    </div>
+  );
 };
 
 export default Register;

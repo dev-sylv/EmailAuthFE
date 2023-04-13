@@ -1,11 +1,14 @@
 export interface iButton {
-  tittle: string;
+  Buttontittle: string;
   bg: string;
   cc: string;
+  onClick: () => void;
 }
 
 export interface iCard {
   tittle: string;
+  Buttontittle: string;
+  onClick: () => void;
 }
 
 export interface iInput {

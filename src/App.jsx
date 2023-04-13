@@ -1,12 +1,10 @@
 import React from 'react'
-import Card from './component/Card'
+import Register from './pages/Auth/Register'
 
 const App = () => {
   return (
     <div>
-   <Card 
-   tittle='SIGN UP'
-   />
+    <Register />
     </div>
   )
 }
