@@ -16,7 +16,7 @@ export default Button;
 
 const Main = styled.div<{ bg: string; cc: string }>`
   width: 120px;
-  height: 80px;
+  height: 50px;
   background-color: ${({ bg }) => bg};
   color: ${({ cc }) => cc};
   border-radius: 3px;
