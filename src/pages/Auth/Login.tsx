@@ -16,6 +16,9 @@ const Login = () => {
           onClick={() => {
             console.log("I am working");
           }}
+          text="Don't have an account"
+          route="Create One Now"
+          path="/"
         />
       </Main>
     </div>

@@ -17,6 +17,9 @@ const Register = () => {
           onClick={() => {
             console.log("I am working");
           }}
+          text="Already have an account"
+          route="Sign in Now"
+          path="/login"
         />
       </Main>
     </div>

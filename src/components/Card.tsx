@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { iCard } from "../types/interfaces/Interfaces";
 import InputData from "./Input";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const Card: React.FC<iCard> = ({
   tittle,
@@ -13,6 +14,9 @@ const Card: React.FC<iCard> = ({
   InputTittle2,
   sign,
   request,
+  route,
+  path,
+  text,
 }) => {
   return (
     <div>
@@ -32,6 +36,9 @@ const Card: React.FC<iCard> = ({
           cc="white"
           onClick={onClick}
         />
+        <Para>
+          {text}, <Routing to={`${path}`}>{route}</Routing>
+        </Para>
       </Main>
     </div>
   );
@@ -58,4 +65,18 @@ const Text = styled.div`
   font-weight: 500px;
   text-transform: uppercase;
   font-size: 40px;
+`;
+const Para = styled.div`
+  display: flex;
+  margin-top: 10px;
+`;
+const Routing = styled(Link)`
+  margin-left: 5px;
+  font-weight: bolder;
+  transition: all 360ms;
+  text-decoration: none;
+  :hover {
+    cursor: pointer;
+    transform: scale(1.007);
+  }
 `;

@@ -17,6 +17,9 @@ const ResetPassword = () => {
           onClick={() => {
             console.log("I am working");
           }}
+          text="Changed your mind about reseting"
+          route="Go back to home"
+          path="/"
         />
       </Main>
     </div>
