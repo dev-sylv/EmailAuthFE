@@ -26,7 +26,7 @@ export default Login;
 
 const Main = styled.div`
   display: flex;
-  height: 100vh;
+  height: calc(100vh - 270px);
   width: 100%;
   justify-content: center;
   align-items: center;

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Card from "../../component/Card";
+import Card from "../../components/Card";
 
 const ResetPassword = () => {
   return (
@@ -27,7 +27,7 @@ export default ResetPassword;
 
 const Main = styled.div`
   display: flex;
-  height: 100vh;
+  height: calc(100vh - 270px);
   width: 100%;
   justify-content: center;
   align-items: center;

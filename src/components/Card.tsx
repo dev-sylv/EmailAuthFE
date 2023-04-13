@@ -50,7 +50,7 @@ const Main = styled.div`
   flex-direction: column;
   align-items: center;
   :hover {
-    border: 1px solid white;
+    border: 2px solid black;
   }
 `;
 const Text = styled.div`
