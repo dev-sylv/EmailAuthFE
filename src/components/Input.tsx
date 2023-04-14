@@ -8,6 +8,13 @@ const InputData: React.FC<iInput> = ({
   InputTittle2,
   sign,
   request,
+,
+    password,
+    userName,
+
+    setUserName,
+    setPassword,
+    onChange,
 }) => {
   const [email, setEmail] = useState("");
   return (

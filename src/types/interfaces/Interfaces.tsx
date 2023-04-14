@@ -29,4 +29,13 @@ export interface iInput {
   InputTittle2?: string;
   request: boolean;
   sign: boolean;
+  email?: string;
+  password?: string;
+  userName?: string;
+
+  onChange?: React.ChangeEventHandler<HTMLInputElement>;
+
+  setEmail?: React.Dispatch<React.SetStateAction<string>>;
+  setPassword?: React.Dispatch<React.SetStateAction<string>>;
+  setUserName?: React.Dispatch<React.SetStateAction<string>>;
 }
