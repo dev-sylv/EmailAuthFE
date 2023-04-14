@@ -16,8 +16,8 @@ const ResetPassword = () => {
             console.log("I am working");
           }}
           text="Changed your mind about reseting"
-          route="Go back to home"
-          path="/"
+          route="Go back to longi"
+          path="/login"
         />
       </Main>
     </div>

@@ -9,11 +9,18 @@ const InputData: React.FC<iInput> = ({
   sign,
   request,
 }) => {
+  const [email, setEmail] = useState("");
   return (
     <div>
       <Field>
         <Form>
-          <Input placeholder={InputTittle} />
+          <Input
+            value={email}
+            onChange={(e: any) => {
+              setEmail(e.target.value);
+            }}
+            placeholder={InputTittle}
+          />
           {sign ? <Input placeholder={InputTittle1} /> : null}
           {request ? <Input placeholder={InputTittle2} /> : null}
         </Form>
